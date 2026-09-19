@@ -71,7 +71,7 @@ button, input, select { font: inherit; }
 .hero h1 em { font-family: Georgia, serif; font-weight: 400; color: #ffd55f; letter-spacing: -.05em; }
 .hero-copy > p { max-width: 500px; margin: 0; color: #f1dfe9; line-height: 1.65; font-size: 1.08rem; }
 .hero-proof { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 20px; color: #ddc5d8; font-size: .78rem; font-weight: 700; }
-.hero-art { min-height: 500px; position: relative; background-image: linear-gradient(90deg, #451846 0%, rgba(69,24,70,.1) 26%, transparent 52%), url('/birthday-table.jpg'); background-size: cover; background-position: 58% center; }
+.hero-art { min-height: 500px; position: relative; background-image: linear-gradient(90deg, #451846 0%, rgba(69,24,70,.1) 26%, transparent 52%), var(--hero-image); background-size: cover; background-position: 58% center; }
 .hero-sticker { position: absolute; right: 28px; top: 28px; width: 112px; height: 112px; display: grid; place-content: center; text-align: center; line-height: 1.08; background: #ffd55f; color: #411539; border-radius: 50%; border: 2px solid #411539; box-shadow: 6px 6px 0 #ff6470; transform: rotate(7deg); font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; }
 .hero-sticker strong { font-family: Georgia, serif; font-style: italic; text-transform: none; font-size: 1.15rem; letter-spacing: 0; }
 
@@ -131,7 +131,7 @@ footer { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 28px 0 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .hero-copy { padding: 55px 46px 40px; }
-  .hero-art { min-height: 330px; background-image: linear-gradient(180deg, #451846 0%, rgba(69,24,70,.05) 24%, transparent 50%), url('/birthday-table.jpg'); }
+  .hero-art { min-height: 330px; background-image: linear-gradient(180deg, #451846 0%, rgba(69,24,70,.05) 24%, transparent 50%), var(--hero-image); }
   .offer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .filter-shell { align-items: stretch; flex-direction: column; }
   .select-group label, .select-group [data-slot="native-select-wrapper"] { flex: 1; width: 100%; }

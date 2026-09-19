@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import {
   ArrowUpRight,
   CakeSlice,
@@ -153,6 +153,7 @@ const offers: Offer[] = [
 ];
 
 const categories = ["All", "Dining", "Shopping", "Experiences"] as const;
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function Home() {
   const [query, setQuery] = useState("");
@@ -196,7 +197,12 @@ export default function Home() {
             <span><Clock3 size={14} /> Checked 19 Sep 2026</span>
           </div>
         </div>
-        <div className="hero-art" role="img" aria-label="Birthday cake and dim sum overlooking Hong Kong harbour">
+        <div
+          className="hero-art"
+          role="img"
+          aria-label="Birthday cake and dim sum overlooking Hong Kong harbour"
+          style={{ "--hero-image": `url('${publicBasePath}/birthday-table.jpg')` } as CSSProperties}
+        >
           <div className="hero-sticker">9 offers<br /><strong>to unwrap</strong></div>
         </div>
       </section>

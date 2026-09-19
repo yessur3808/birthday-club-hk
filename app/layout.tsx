@@ -4,8 +4,8 @@ import "./globals.css";
 const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
-  title: "Birthday Club HK — Hong Kong birthday offers",
-  description: "Find birthday dining, shopping and experience offers around Hong Kong, with links to every official source.",
+  title: "Birthday Club — verified birthday offers by city",
+  description: "Find birthday dining, shopping and experience offers in Hong Kong, Tokyo, Los Angeles, London, New York and Berlin, with links to official sources.",
   icons: {
     icon: `${publicBasePath}/favicon.svg`,
     shortcut: `${publicBasePath}/favicon.svg`,
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-HK">
+    <html lang="en">
       <body className="antialiased">{children}</body>
     </html>
   );
